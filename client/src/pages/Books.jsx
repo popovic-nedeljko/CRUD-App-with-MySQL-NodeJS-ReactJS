@@ -40,13 +40,17 @@ const Books = () => {
               Delete
             </button>
             <button className='update'>
-              <Link to={`/update/${book.id}`}>Update</Link>
+              <Link className='link' to={`/update/${book.id}`}>
+                Update
+              </Link>
             </button>
           </div>
         ))}
       </div>
-      <button>
-        <Link to='/add'>Add new book</Link>
+      <button className='new-book'>
+        <Link className='link new-book' to='/add'>
+          Add new book
+        </Link>
       </button>
     </div>
   );

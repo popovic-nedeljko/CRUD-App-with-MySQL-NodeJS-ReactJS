@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+p {
+  flex: 1;
+}
+
 img {
   width: 200px;
   height: 300px;
@@ -42,6 +46,12 @@ img {
 .update {
   border: 1px solid rgb(204, 204, 243);
   color: rgb(139, 139, 234);
+}
+.link {
+  text-decoration: none;
+}
+.new-book {
+  margin: 15px;
 }
 
 .form {
