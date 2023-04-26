@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style.css';
 
 import Update from './pages/Update';
-import Add from './pages/Add';
 import Books from './pages/Books.jsx';
+import Add from './pages/Add.jsx';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Books />} />
           <Route path='/add' element={<Add />} />
-          <Route path='/update' element={<Update />} />
+          <Route path='/update/:id' element={<Update />} />
         </Routes>
       </BrowserRouter>
     </div>
